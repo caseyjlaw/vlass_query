@@ -77,8 +77,7 @@ def get_fitsname(co):
 
     tilename = get_tilename(co)
     file0 = get_filename(co, tilename=tilename)
-    base_url = '{0}/quicklook/VLASS1.1/{1}/{2}'
-               .format(archive_url, tilename, file0)
+    base_url = '{0}/quicklook/VLASS1.1/{1}/{2}'.format(archive_url, tilename, file0)
     res = requests.get(base_url)
 
     fitsfile = list(filter(lambda x: file0 in x and 'tt0.subim.fits' in x,
