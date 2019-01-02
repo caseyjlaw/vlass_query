@@ -1,11 +1,12 @@
-# vlass_query and FIRST J141918.9+394036
+# VLASS Transient Search and Analysis of FIRST J141918.9+394036
 
-## Python module and results on FIRST J141918.9+394036.
+This repo includes code, data, and analysis related to the Very Large Array Sky Survey and radio transient FIRST J141918.9+394036.
 
-This repo includes code, data, and analysis related to the Very Large Array Sky Survey data analysis.
+## Contents
 
-1) Import Python module `get_vlass.py` to use functions for querying NRAO VLASS 1.1 quick look image release.
-This will likely be superseded by proper data release and/or new tools being produced by CIRADA.
+1) The basic search tool is a Python module that scrapes the NRAO VLASS archive for quicklook images. 
+Import `get_vlass.py` to use functions for querying NRAO VLASS 1.1 quick look image release.
+This module is now obsolete, since the CADC has a nice query tool at http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/search.
 
 2) The jupyter notebook includes analysis of radio transient FIRST J141918.9+394036.
 Clone the repo, load `J141918.855+394036.03.ipynb` in Jupyter or nteract, and execute
